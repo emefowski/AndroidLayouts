@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    
+    tools:context="com.example.layouts.MainActivity" >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.5">
+        
+        <TextView
+            android:text="red"
+        	android:gravity="center_horizontal"
+        	android:background="#aa0000"
+        	android:layout_width="wrap_content"
+        	android:layout_height="fill_parent"
+        	android:layout_weight="0.5">
+            
+        </TextView>
+        
+           <TextView
+            android:text="green"
+        	android:gravity="center_horizontal"
+        	android:background="#00aa00"
+        	android:layout_width="wrap_content"
+        	android:layout_height="fill_parent"
+        	android:layout_weight="0.5">
+            
+        </TextView>
+        	
+    </LinearLayout>
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.5"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/label"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button1"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="24dp"
+            android:background="@android:drawable/editbox_background"
+            android:ems="10" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="Awesome" />
+
+        <TextView
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/label"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="28dp"
+            android:text="What&apos;s up"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>
